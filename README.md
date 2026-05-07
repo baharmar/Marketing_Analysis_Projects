@@ -1,49 +1,45 @@
-# Marketing_Analysis_Projects
+# Machinery Rental — Customer Analytics Pipeline
 
-# 1. Machinery Rental Behavior Analysis
+From raw transactional data to retention strategy. This project covers a full customer analytics pipeline built on real B2B data from a machinery rental company — exploratory analysis, RFM segmentation, churn prediction, and CRM recommendations.
 
-# General Analysis of the Products and Seasonality
-## 🔍 Project Overview
-Behavioral and demand-based analysis of B2B rental customers across 2021–2024. Includes RFM scoring, demand forecasting, rental-type segmentation, and product-level insights.
+---
 
-## 💼 Business Questions
-- What products drive the most revenue and customer retention?
-- When and how do contract lengths and rental types vary?
-- How can product managers use this to improve pricing and upselling?
+## The Business Problem
 
-## 📊 Analysis Highlights
-- Core products by customer reach and contract volume
-- Seasonality of demand and average contract durations
-- Daily vs Monthly vs Annual revenue and behavior segmentation
+Machinery rental companies live and die by repeat business. Losing a customer doesn't just mean one lost contract — it means losing a long-term revenue relationship that's expensive to replace. The challenge: with hundreds of B2B clients in the portfolio, it's nearly impossible to know *which* customers are quietly drifting away before it's too late to act.
 
-## 💡 Strategic Insights
-- Long-term rentals secure revenue stability
-- Spring and year-end spikes in short-term contracts
-- Fleet planning and pricing should be seasonally aligned
+---
 
-## 🛠️ Tools Used
-- Python (Pandas, Seaborn, Matplotlib)
+## The Data
+
+Transactional purchase history from a B2B machinery rental company — covering **1,606 customers** across multiple product categories, time periods, and seasonal demand cycles. The analysis included purchase frequency, recency, revenue contribution (Monetary), product mix, and temporal patterns.
+
+---
+
+## How This Project Is Structured
+
+| Part | Focus | Key Output |
+|------|-------|------------|
+| 1. Exploratory Analysis | Understanding the business | Fleet, pricing, seasonality insights |
+| 2. Customer Segmentation | Who the customers are | 5 RFM segments |
+| 3. Churn Prediction | Who is at risk | ML model, AUC ~0.72 |
+| 4. CRM Recommendations | What to do about it | Actionable retention playbook |
+
+---
+
+## What a Client Can Do With This
+
+The high-risk segment identified by the churn model represents customers who *look* active but show behavioural patterns consistent with pre-churn. If a sales or CRM team targets this group with a proactive reactivation campaign — a check-in call, a loyalty discount, or a contract renewal incentive — even a **20% save rate** on that segment translates directly to retained recurring revenue that would otherwise silently walk out the door.
+
+---
+
+## The Bottom Line
+
+This is the foundation for a prioritisation engine in a CRM system. Instead of treating every customer the same, a machinery rental business can finally answer: *who needs attention right now, and what should we say to them?*
+
+---
+
+## Tools Used
+
+- Python (Pandas, Seaborn, Matplotlib, Scikit-learn)
 - Jupyter Notebook
-
-## 🧠 Customer Personas
-
-Based on RFM scoring and contract regularity, we identified multiple behavioral segments, including:
-
-- **High-Frequency, High-Monetary Customers** ("Top Users"): Require long-term fleet stability and loyalty incentives.
-- **Medium-Frequency, Medium-Regularity** ("Butterflies"): Opportunity for bundling and conversion to annual contracts.
-- **Low-Frequency, High-Monetary** ("Strategic Buyers"): Upsell potential via specialized offers.
-
-👉 See `Customer_Personas.pdf` for full segmentation analysis.
-
-## 🎯 Persona: Medium-Sized Frequent Renters
-
-- **Segment**: Medium Size / Medium Regularity
-- **Typical Products**: Semverticali Ele, Silver Furgoni
-- **Contract Style**: Monthly rentals, 150–300 days average
-- **Purchase Pattern**: Rents every 2–3 months, prefers structured but flexible use
-- **Revenue Impact**: Stable mid-range income, opportunity for upsell
-- **Marketing Strategy**:
-  - Offer “Monthly Loyalty” bundles
-  - Promote contract extensions at 120-day mark
-
-
